@@ -16,7 +16,7 @@ export const Modal = ({ children, closeWindow }) => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [closeWindow]);
 
   const onClose = evt => {
     if (evt?.target === evt?.currentTarget) {
